@@ -179,7 +179,15 @@ picture svg {
   gap: 1rem;
 }
 
-@media (min-width: 50em) /* General styling */ body {
+@media (min-width: 50em) {
+  .even-columns {
+    grid-auto-flow: column;
+  }
+}
+
+/* General styling */
+
+body {
   font-size: var(--fs-body);
   font-family: var(--ff-body);
   color: var(--clr-primary-400);
