@@ -174,9 +174,12 @@ picture svg {
   margin-inline: auto;
 }
 
-/* General styling */
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
 
-body {
+@media (min-width: 50em) /* General styling */ body {
   font-size: var(--fs-body);
   font-family: var(--ff-body);
   color: var(--clr-primary-400);
