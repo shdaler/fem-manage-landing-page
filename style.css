@@ -261,6 +261,13 @@ body {
   color: var(--clr-accent-300);
 }
 
+/* navigation */
+
+.primary-header {
+  margin-top: var(--size-700);
+  display: flex;
+}
+
 .mobile-nav-toggle {
   cursor: pointer;
   background: transparent;
