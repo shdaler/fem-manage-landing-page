@@ -258,7 +258,11 @@ p[data-width="wide"] {
   text-align: center;
 }
 
-@media (min-width: 50em);
+@media (min-width: 50em) {
+  .cta {
+    text-align: left;
+  }
+}
 
 .cta::before {
   content: "";
@@ -312,6 +316,12 @@ p[data-width="wide"] {
 
 .justify-self-end {
   justify-self: end;
+}
+
+@media (min-width: 50em) {
+  .justify-self-end {
+    justify-self: end;
+  }
 }
 
 :where(.flow :not(:first-child)) {
