@@ -272,6 +272,10 @@ p[data-width="wide"] {
   margin-inline: auto;
 }
 
+.push-right {
+  margin-left: auto;
+}
+
 :where(.flow :not(:first-child)) {
   margin-top: var(--flow-spacer, 3em);
 }
