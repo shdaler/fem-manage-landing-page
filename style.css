@@ -250,6 +250,22 @@ p[data-width="wide"] {
   }
 }
 
+/* footer navigation */
+
+.footer-nav {
+  columns: 2;
+  gap: clamp(var(--size-200), 30vw, var(--size-900));
+}
+
+.footer-nav a {
+  color: var(--clr-neutral-100);
+  text-decoration: none;
+}
+
+.footer-nav a:is(:hover, :focus) {
+  color: var(--clr-accent-400);
+}
+
 /* cta */
 
 .cta {
