@@ -155,6 +155,10 @@ p[data-width="wide"] {
   color: var(--clr-accent-400);
 }
 
+.button[data-shadow="none"] {
+  box-shadow: none;
+}
+
 .button:hover,
 .button:focus-visible {
   background-color: var(--clr-accent-300);
@@ -283,7 +287,7 @@ p[data-width="wide"] {
   align-content: space-between;
 }
 
-.primary-footer form {
+.primary-footer-form {
   display: flex;
   gap: var(--size-200);
 }
