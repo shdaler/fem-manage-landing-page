@@ -255,6 +255,15 @@ p[data-width="wide"] {
   --logo-color: var(--clr-neutral-100);
 }
 
+.primary-footer-wrapper {
+  display: grid;
+  gap: var(--size-700);
+  grid-template-areas:
+    "form"
+    "nav"
+    "logo-social";
+}
+
 /* footer navigation */
 
 .footer-nav {
@@ -271,9 +280,11 @@ p[data-width="wide"] {
   color: var(--clr-accent-400);
 }
 
+/* social list */
+
 .social-list {
   display: flex;
-  gap: var(--size-300);
+  gap: var(--size-600);
 }
 
 .social-icon {
@@ -287,6 +298,9 @@ p[data-width="wide"] {
 }
 
 @media (min-width: 50em) {
+  .social-list {
+    gap: var(--size-300);
+  }
   .social-icon {
     width: var(--size-500);
   }
