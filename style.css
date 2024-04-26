@@ -252,7 +252,7 @@ p[data-width="wide"] {
 
 /* footer */
 .primary-footer {
-  --logo-color: var(var(--clr-neutral-100));
+  --logo-color: var(--clr-neutral-100);
 }
 
 /* footer navigation */
