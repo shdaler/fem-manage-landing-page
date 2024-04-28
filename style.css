@@ -394,16 +394,26 @@ input:where([type="text"], [type="email"], ) {
 }
 .numbered-items div {
   display: grid;
+  position: relative;
   align-items: center;
   column-gap: var(--size-400);
   grid-template-columns: min-content 1fr;
 }
 
-.numbered-items p {
+.numbered-items__title::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  background: orange;
+}
+
+.numbered-items__body {
   grid-column: 1 / -1;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 30em) {
   .numbered-items p {
     grid-column: 2 / -1;
   }
