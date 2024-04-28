@@ -403,6 +403,12 @@ input:where([type="text"], [type="email"], ) {
   grid-column: 1 / -1;
 }
 
+@media (min-width: 50em) {
+  .numbered-items p {
+    grid-column: 2 / -1;
+  }
+}
+
 .numbered-items div::before {
   content: "0" counter(count);
   display: flex;
