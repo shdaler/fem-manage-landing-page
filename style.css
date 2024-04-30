@@ -82,7 +82,8 @@ html:focus-within {
 
 html,
 body {
-  height: 100px;
+  min-height: 100px;
+  overflow-x: hidden;
 }
 /* Set core body defaults */
 body {
@@ -389,8 +390,8 @@ input:where([type="text"], [type="email"], ) {
   position: absolute;
   z-index: -1;
   inset: 0;
-  background-image: url(images/bg-tablet-pattern.svg),
-    url(images/bg-tablet-pattern.svg);
+  background-image: url("images/bg-tablet-pattern.svg"),
+    url("images/bg-tablet-pattern.svg");
   background-position: -15rem -5rem, 80rem -42rem;
   background-repeat: no-repeat;
   opacity: 0.1;
@@ -541,7 +542,7 @@ input:where([type="text"], [type="email"], ) {
   background: var(--clr-accent-400);
 }
 
-/* image with blob bg */
+/* hero */
 
 @media (max-width: 47em) {
   .hero_image {
@@ -560,7 +561,7 @@ input:where([type="text"], [type="email"], ) {
   max-height: 70hv;
   max-height: 70dhv;
   aspect-ratio: 1 / 1.2;
-  background-image: url(images/bg-tablet-pattern.svg);
+  background-image: url("images/bg-tablet-pattern.svg");
   background-position: bottom left;
 }
 
@@ -568,6 +569,22 @@ input:where([type="text"], [type="email"], ) {
   .hero_image::before {
     width: 45%;
   }
+}
+
+/* sales points */
+
+.sales-points {
+  position: relative;
+}
+
+.sales-points::before {
+  content: url("images/bg-tablet-pattern.svg");
+  zoom: 30%;
+  position: absolute;
+  z-index: -1;
+  left: 70%;
+  bottom: 100%;
+  width: 100px;
 }
 
 /* Utility classes */
