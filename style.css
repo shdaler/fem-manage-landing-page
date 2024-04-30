@@ -43,7 +43,7 @@
   --size-900: 5rem;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 47em) {
   :root {
     --fs-body: var(--fs-500);
     --fs-primary-heading: var(--fs-900);
@@ -207,7 +207,7 @@ p[data-width="wide"] {
   color: var(--clr-accent-400);
 }
 
-@media (max-width: 50em) {
+@media (max-width: 47em) {
   .primary-navigation {
     display: none;
 
@@ -299,7 +299,7 @@ input:where([type="text"], [type="email"], ) {
   padding: var(--size-300) var(--size-400);
 }
 
-@media (min-width: 50em) {
+@media (min-width: 47em) {
   .primary-footer-wrapper {
     grid-template-areas: "logo-social nav form";
   }
@@ -311,7 +311,7 @@ input:where([type="text"], [type="email"], ) {
   }
 }
 
-@media (max-width: 50em) {
+@media (max-width: 47em) {
   .primary-footer-wrapper > * {
     margin-inline: auto;
   }
@@ -349,7 +349,7 @@ input:where([type="text"], [type="email"], ) {
   fill: var(--clr-accent-400);
 }
 
-@media (min-width: 50em) {
+@media (min-width: 47em) {
   .social-list {
     gap: var(--size-300);
   }
@@ -366,7 +366,7 @@ input:where([type="text"], [type="email"], ) {
   text-align: center;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 47em) {
   .cta {
     text-align: left;
   }
@@ -482,7 +482,7 @@ input:where([type="text"], [type="email"], ) {
   }
 }
 
-@media (min-width: 50em) {
+@media (min-width: 47em) {
   .slider > * {
     width: 35%;
   }
@@ -531,7 +531,7 @@ input:where([type="text"], [type="email"], ) {
 
 /* image with blob bg */
 
-@media (max-width: 50em) {
+@media (max-width: 47em) {
   .hero_image {
     /* position: relative; */
     order: -1;
@@ -544,11 +544,18 @@ input:where([type="text"], [type="email"], ) {
   z-index: -1;
   left: 0;
   top: 0;
-  width: 100px;
+  width: 87%;
   max-height: 70hv;
+  max-height: 70dhv;
   aspect-ratio: 1 / 1.2;
   background-image: url(images/bg-tablet-pattern.svg);
   background-position: bottom left;
+}
+
+@media (min-width: 47em) {
+  .hero_image::before {
+    width: 45%;
+  }
 }
 
 /* Utility classes */
@@ -578,7 +585,7 @@ input:where([type="text"], [type="email"], ) {
   gap: 1rem;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 47em) {
   .even-columns {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
@@ -593,7 +600,7 @@ input:where([type="text"], [type="email"], ) {
   justify-self: end;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 47em) {
   .justify-self-end {
     justify-self: end;
   }
@@ -611,7 +618,7 @@ input:where([type="text"], [type="email"], ) {
   margin-inline: auto;
 }
 
-@media (max-width: 50em) {
+@media (max-width: 47em) {
   .text-center-sm-only {
     text-align: center;
   }
@@ -703,7 +710,7 @@ input:where([type="text"], [type="email"], ) {
 .display-sm-none {
   display: none;
 }
-@media (min-width: 50em) {
+@media (min-width: 47em) {
   .display-md-inline-flex {
     display: inline-flex;
   }
