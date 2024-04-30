@@ -531,16 +531,22 @@ input:where([type="text"], [type="email"], ) {
 
 /* image with blob bg */
 
-.image-with-blob-bg {
-  position: relative;
+@media (max-width: 50em) {
+  .hero_image {
+    /* position: relative; */
+    order: -1;
+  }
 }
-.image-with-blob-bg::before {
+
+.hero_image::before {
   content: "";
   position: absolute;
+  z-index: -1;
   left: 0;
   top: 0;
   width: 100px;
-  aspect-ratio: 1;
+  max-height: 70hv;
+  aspect-ratio: 1 / 1.2;
   background-image: url(images/bg-tablet-pattern.svg);
   background-position: bottom left;
 }
@@ -688,6 +694,10 @@ input:where([type="text"], [type="email"], ) {
 
 .margin-bottom-700 {
   margin-block-end: var(--size-700);
+}
+
+.mx-auto {
+  margin-inline: auto;
 }
 
 .display-sm-none {
