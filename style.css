@@ -292,12 +292,11 @@ p[data-width="wide"] {
 
 .primary-footer__form {
   grid-area: form;
-
-  .primary-footer__copyright {
-    grid-area: copyright;
-    text-align: center;
-    opacity: 0.7;
-  }
+}
+.primary-footer__copyright {
+  grid-area: copyright;
+  text-align: center;
+  opacity: 0.7;
 }
 
 .primary-footer__nav {
@@ -339,7 +338,7 @@ input:where([type="text"], [type="email"], ) {
     grid-template-areas:
       "logo nav form"
       "social nav copyright";
-    grid-template-columns: min-content 1fr auto;
+    grid-template-columns: min-content 1 fr auto;
   }
 
   .primary-footer__copyright {
