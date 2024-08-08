@@ -88,7 +88,7 @@ body {
 /* Set core body defaults */
 body {
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 /* A elements that don't have a class get default styles */
@@ -295,7 +295,7 @@ p[data-width="wide"] {
 .primary-footer__copyright {
   grid-area: copyright;
   text-align: center;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .primary-footer__nav-wrapper {
