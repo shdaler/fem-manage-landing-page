@@ -401,7 +401,7 @@ input:where([type="text"], [type="email"], ) {
     url("images/bg-tablet-pattern.svg");
   background-position: -15rem -5rem, 80rem -42rem;
   background-repeat: no-repeat;
-  opacity: 0.1;
+  opacity: 0.2;
 }
 
 /* numbered items */
