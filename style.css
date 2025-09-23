@@ -491,7 +491,7 @@ input:where([type="text"], [type="email"], ) {
 
 @media (min-width: 30em) {
   .slider {
-    scroll-padding-inline: 25px;
+    scroll-padding-inline: 26px;
   }
 
   .a11y-slider-container {
